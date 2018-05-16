@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background: darkgray;
+    line-height: 60px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #66CD00;
+}
+.banner .tag{
+    float: right;
+    margin-top:160px;
+}
+.banner .tag li{
+    display: inline-block;
+    background: #458B00;
+    padding: 5px;
+    color:#ccc;
+}
+.banner .tag .select{
+    background: #D1EEEE;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #DBDBDB;
+}
+.nav ul li{
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #999;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    font-size: 12px;
+    background: #DBDBDB;
+    margin-top: 13px;
+    border-radius: 15px 15px 0 0 ;
+    float: left;
+}
+.nav ul .active{
+    background: #fff;
+    border-bottom: 0;
+}
+.container{
+    width: 100%;
+}
+.container .one-line,.two-line,.three-line{
+    width: 100%;
+    margin: 15px 15px 15px 0;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+
+}
+.container .one-line .item,.container .two-line .item,.container .three-line .item{
+    flex: 1;
+    border: 1px solid #cccccc;
+    margin-right: 15px;
+    padding: 80px;
+}
+.container .one-line .end,.container .two-line .end,.container .three-line .end{
+    margin-right: 0;
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    background: #999999;
+}
+.footer p{
+    padding: 10px;
+    text-align: center;
+    color:#DBDBDB;
+}
