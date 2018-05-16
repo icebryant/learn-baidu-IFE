@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+    <style>
+    a{
+    text-decoration: none;
+    color:#333;
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    height: 100px;
+    background:url("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2010452391,4060461689&fm=27&gp=0.jpg")
+}
+.header h1{
+    color:#FF7F00;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:50px;
+    content: attr(data-text);  
+    text-shadow: 2px 2px 2px #FF7F24;   
+}
+.container{
+    font-size:20px;
+    background:#00a0fc;
+}
+ul li{
+    list-style: square;
+}
+a{
+    text-decoration: none;
+     color:orange;
+  } 
+  a:link {
+    color:#FF34B3;
+  }    /* 未被访问的链接 */
+  a:visited {
+    color:#00FF00;
+  } /* 已被访问的链接 */
+  a:hover {
+    color:#FF1493;
+  }   /* 鼠标指针移动到链接上 */
+  a:active {
+    color:#0000FF;
+  }  /* 正在被点击的链接 */
+  /* 为了使定义生效，a:hover 必须位于 a:link 和 a:visited 之后！！
+  为了使定义生效，a:active 必须位于 a:hover 之后！！ */
+  .content-hd{
+      padding-left: 15px;
+      border: 2px solid #666;
+  }
+  .content-bd{
+    padding-left: 15px;
+      border:2px dotted #666;
+  }
+  .wrap{
+    padding:30px; 
+}
+.footer{
+    width: 1200px;
+    text-align: center;
+}
+.footer a{
+    color:#666;
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+         <div class="header">
+                    <h1>个人简历</h1>
+          </div>
+    </div>
+    <div class="content">
+            <div class="container">
+                <div class="wrap">
+                        <header class="content-hd">
+                                <section class="title">
+                                  <div class="name">
+                                    <h1>李栓蛋</h1>
+                                  </div>
+                                  <div class="job">
+                                    <h2>Web前端开发工程师</h2>
+                                  </div>
+                                </section>
+                                <section class="info">
+                                  <ul>
+                                    <li>男 / 1992.03</li>
+                                    <li>百度前端学院</li>
+                                    <li>本科 / 2017年毕业</li>
+                                  </ul>
+                                </section>
+                                <section class="contact">
+                                  <ul>
+                                    <li>
+                                      <a href="https://github.com/songshaoqing">
+                                      <span class="contact-link">songshaoqing</span>
+                                      <span class="iconfont">
+                                      </span>
+                                    </a>
+                                    </li>
+                                    <li>
+                                      <a href="1103633343@qq.com">
+                                      <span class="contact-link">1103633343@qq.com</span>
+                                      <span class="iconfont">
+                                      </span>
+                                    </a>
+                                    </li>
+                                    <li>
+                                      <a href="tel:17611075997">
+                                      <span class="contact-link">17611075997</span>
+                                      <span class="iconfont">
+                                      </span>
+                                    </a>
+                                    </li>
+                                  </ul>
+                                </section>
+                              </header>
+                          
+                              <div class="content-bd">
+                          
+                                <div class="content-left">
+                          
+                                  <section class="practice">
+                                    <header class="section-hd">
+                                      <span class="section-title-l"></span>
+                                      <h2 class="section-title">经历</h2>
+                                      <span class="section-title-r"></span>
+                                    </header>
+                                    <div class="section-bd">
+                          
+                                      <!--经历:工作-->
+                                      <div class="item">
+                                        <header class="item-hd">
+                                          <h3 class="item-name">福耀集团（北京）</h3>
+                                          <span class="item-time">2016.07-2017.09</span>
+                                          <a>工作</a>
+                                        </header>
+                                        <div class="item-bd">
+                                          现在静心修炼中
+                                        </div>
+                                      </div>
+                          
+                                      <div class="content-right">
+                          
+                                        <section class="skill">
+                                          <header class="section-hd">
+                                            <span class="section-title-l"></span>
+                                            <h2 class="section-title">技能</h2>
+                                            <span class="section-title-r"></span>
+                                          </header>
+                                          <div class="section-bd">
+                          
+                                            <!--技能:JS-->
+                                            <div class="item">
+                                              <header class="item-hd">
+                                                <span class="item-time">Web</span>
+                                                <a class="btn item-more">熟悉</a>
+                                              </header>
+                                              <div class="item-bd">
+                                                <ul class="section-content">
+                                                  <li>熟知JS基本语法与知识，掌握最新JS语法与API以及TypeScript</li>
+                                                  <li>掌握网页重构所需的CSS、SCSS</li>
+                                                  <li>熟悉前端流行框架vue</li>
+                                                  <li>熟悉chrome扩展开发及自动化控制</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                          
+                                            <!--vue-->
+                                            <div class="item">
+                                              <header class="item-hd">
+                                                <span class="item-time">vue</span>
+                                                <a class="btn item-more">熟悉</a>
+                                              </header>
+                                              <div class="item-bd">
+                                                <ul class="section-content">
+                                                  <li>用vue开发大型复杂应用，熟知vue原理与生态技术栈经验丰富</li>
+                                                  <li>熟悉vue调试、性能优化、同构等扩展技能</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                          
+                                            <!--Webpack-->
+                                            <div class="item">
+                                              <header class="item-hd">
+                                                <span class="item-time">Webpack</span>
+                                                <a class="btn item-more">了解</a>
+                                              </header>
+                                              <div class="item-bd">
+                                                <ul class="section-content">
+                                                  <li>了解大型项目的构建与迁移</li>
+                                                  <li>了解Webpack原理，可以开发复杂的Webpack插件与loader</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                        
+                                            <div class="item">
+                                              <header class="item-hd">
+                                                <span class="item-time">Nodejs</span>
+                                                <a class="btn item-more">了解</a>
+                                              </header>
+                                              <div class="item-bd">
+                                                <ul class="section-content">
+                                                  <li>了解Nodejs标准库及模型，在实际项目中多处使用Nodejs</li>
+                                                  <li>了解git协作开发</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                          
+                                           
+                                            <div class="item">
+                                              <header class="item-hd">
+                                                <span class="item-time">jQuery</span>
+                                                <a class="btn item-more">熟练</a>
+                                              </header>
+                                              <div class="item-bd">
+                                                <ul class="section-content">
+                                                  <li>熟练用jq操作DOM</li>
+                                                  <li>熟练使用jq做简单特效</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                          
+                                           
+                                            <div class="item">
+                                              <header class="item-hd">
+                                                <span class="item-time">网络协议</span>
+                                                <a class="btn item-more">了解</a>
+                                              </header>
+                                              <div class="item-bd">
+                                                <ul class="section-content">
+                                                  <li>了解互联网基本运行机制，TCP与UDP协议</li>
+                                                  <li>了解HTTP协议，对新版HTTP2也有了解</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                          
+    
+                                            <div class="item">
+                                              <header class="item-hd">
+                                                <span class="item-time">数据库</span>
+                                                <a class="btn item-more">了解</a>
+                                              </header>
+                                              <div class="item-bd">
+                                                <ul class="section-content">
+                                                  <li>了解关系型数据库基本概念与SQL</li>
+                                                  <li>了解Postgres、MongoDB、Redis及集群原理与搭建</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                          
+                                            <!--其它-->
+                                            <div class="item">
+                                              <header class="item-hd">
+                                                <span class="item-time">其它</span>
+                                                <a class="btn item-more">了解</a>
+                                              </header>
+                                              <div class="item-bd">
+                                                <ul class="section-content">
+                                                  <li>熟悉react、Git、webpack</li>
+                                                  <li>资深windows用户</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </section>
+                                      </div>
+                                    </div>
+                </div>         
+            </div>
+    </div>
+
+
+<div class="footer">
+     <a class="footer-link" href="https://github.com/songshaoqing/baiduwebschool">
+        ©2018 Shuandan 使用栓蛋网 意见反馈 京ICP证030173号  京公网安备110号 </a>
+</div>
+<script>
+var oPageX=window.screen.width;
+var oPageY=window.screen.height;
+var aSnow=[];
+//    雪花模板
+function snow(x,y,xspeed,yspeed,xsin,size){//x水平位置,y垂直位置,xspeed水平步距,yspeed垂直步距,xsin振幅,size雪花大小
+    this.node=document.createElement('div');
+    this.x=x;
+    this.y=y;
+    this.xspeed=xspeed;
+    this.yspeed=yspeed;
+    this.xsin=xsin;
+    this.size=size;
+    this.createSnow=function(){
+        this.node.style.position='absolute';
+        this.node.style.top=this.y+'px';
+        this.node.style.left=this.x+'px';
+        this.node.style.color="#fff"
+        this.node.innerHTML='*';
+        document.body.appendChild(this.node);
+    };
+    this.createSnow();
+    this.snowMove=function(){
+        this.node.style.top=parseInt(this.node.style.top)+this.yspeed+'px';//垂直方向运动
+        this.node.style.left=parseInt(this.node.style.left)+this.xsin*Math.sin(this.xspeed)+'px';
+        this.node.style.fontSize=this.size+'px';
+//            this.node.style.color='rgb('+Math.ceil(Math.random()*255)+','+Math.ceil(Math.random()*255)+','+Math.ceil(Math.random()*255)+')';
+    };
+}
+//    创建雪花
+function createSnow(){
+    aSnow.push(new snow(Math.random()*oPageX,-50,0.02+Math.random()/10,1+Math.random(),Math.random()*30,20+Math.random()*30));
+}
+setInterval(createSnow,1000);//一秒钟创建一个雪花
+//    雪花移动函数
+function snowMove(){
+    for(var j=0;j<aSnow.length;j++){
+        aSnow[j].snowMove();
+        if(parseInt(aSnow[j].node.style.top)>oPageY || parseInt(aSnow[j].node.style.left)>oPageX){
+            aSnow[j].node.parentNode.removeChild(aSnow[j].node);
+            aSnow.splice(j,1);
+        }
+    }
+}
+setInterval(snowMove,10);
+</script>
+</body>
+</html>
