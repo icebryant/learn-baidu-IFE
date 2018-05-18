@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="text"  placeholder="第一个数字">
+    <input id="second-number" type="number"  placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+window.onload=function(){
+var fNum=document.getElementById("first-number");
+var sNum=document.getElementById("second-number");
+var addBtn=document.getElementById("add-btn");
+var minusBtn=document.getElementById("minus-btn");
+var timesBtn=document.getElementById("times-btn");
+var divideBtn=document.getElementById("divide-btn");
+var result=document.getElementById("result");
+
+addBtn.addEventListener("click",add);
+minusBtn.addEventListener("click",minus);
+timesBtn.addEventListener("click",times);
+divideBtn.addEventListener("click",divide);
+function add(){
+    r=parseInt(fNum.value)+parseInt(sNum.value);
+    result.innerHTML=r;
+};
+function minus(){
+    r=parseInt(fNum.value)-parseInt(sNum.value);
+    result.innerHTML=r;
+};
+function times(){
+    r=parseInt(fNum.value) * parseInt(sNum.value);
+    result.innerHTML=r;
+};
+function divide(){
+
+    if(parseInt(sNum.value)==0){
+        console.log("除数不能为0");
+        return
+    }
+    r=parseInt(fNum.value) / parseInt(sNum.value);
+    result.innerHTML=r;
+};
+
+};
+    </script>
+</body>
+</html>
