@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #clock{
+        font-size: 50px;
+        color:aqua;
+    }
+    </style>
+</head>
+<body>
+    <div id='clock'></div>
+    <select id="year-select">
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            ……
+            <option value="2032">2032</option>
+        </select>
+        
+        <select id="month-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            ……
+            <option value="12">12</option>
+        </select>
+        
+        <select id="day-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            ……
+            <option value="31">31</option>
+        </select>
+        
+        <select id="hour-select">
+            <option value="0">00</option>
+            <option value="1">01</option>        
+            ……
+            <option value="23">23</option>
+        </select>
+        
+        <select id="minite-select">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            ……
+            <option>59</option>
+        </select>
+        
+        <select id="second-select">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            ……
+            <option>59</option>
+        </select>
+        
+        <p id="result-wrapper"></p>
+<script>
+    function noon(n){
+        var a=n.getHours();
+        if(n>12)
+        {
+            return "PM";
+        }
+        else
+        {
+            return "AM"
+        }
+
+    }
+    function day(n)
+    {
+      var arr=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday '];
+      return arr[n.getDay()];
+    };
+    function toDou(n){
+      if(n<10)
+      {
+        return "0"+n;
+      }
+      else
+      {
+            return ""+n;
+      };      
+  };
+  function packDay(n){
+   return n.getFullYear()+"年"+toDou(n.getMonth())+"月"+toDou(n.getDate())+"日"+" "+day(n)+" "+toDou(n.getHours())+":"+toDou(n.getMinutes())+":"+toDou(n.getSeconds())+" "+noon(n);
+  };
+    setInterval(function(){
+        var date=new Date();
+        var clock=document.getElementById('clock');
+        clock.innerHTML=packDay(date);
+
+    },1000);
+    //任务二
+  //未完成，待改进
+  
+    var yearSelect=document.getElementById("year-select");
+           var date=new Date();
+           var result=document.getElementById("result-wrapper");
+            result.innerHTML="现在距离"+packDay(date)+"还有 X 天 X 小时 X 分 X 秒" ;          
+        yearSelect.onchange=function(){
+            
+                  
+            var time=this.options[this.options.selectedIndex].value;
+            var a=parseInt(date.getFullYear()) - parseInt(time);
+            if(a>0)
+            {
+                result.innerHTML="现在距离"+packDay(date)+"还有"+(parseInt(date.getFullYear())-parseInt(time))+"年";
+            }
+            else
+            {
+                result.innerHTML="现在距离"+packDay(date)+"已经过去"+Math.abs(parseInt(date.getFullYear())-parseInt(time))+"年";
+            }
+            
+           
+        }
+
+    
+    
+
+</script>
+</body>
+</html>
